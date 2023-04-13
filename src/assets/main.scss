@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../assets/filter.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body, div, p, h1, h2, h3, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background: #E9E9E9;
+    padding: 80px 0;
+
+    &__wrapper {
+        display: flex;
+        gap: 34px;
+    }
+}
+
+.aside {
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.show {
+    background: #C618AB;
+    color: white;
+    max-width: 94px;
+    height: 28px;
+    cursor: pointer;
+    transition: filter .3s;
+
+    &:hover {
+        filter: brightness(0.9)
+    }
+}
+
+.disabled {
+    cursor: no-drop;
+    opacity: 0.5;
+}
